@@ -1,0 +1,10 @@
+<li class='list-group-item' [ngStyle]="{'background-color': getColor()}">
+   
+  <p class="datee">{{ created_at | date: 'short' }}</p>
+  <h2>{{ title }}</h2>
+  <p>{{ content }}</p>
+  
+  <button class="btn btn-success" (click)='loveIt()'>love It</button>
+  <button id="dang" class="btn btn-danger" (click)='dontLoveIt()'>Don't love</button>
+ 
+</li>
